@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  height: 800vh;
 }
 
 .hero {
@@ -106,20 +107,22 @@ svg {
 }
 
 section {
-  margin-top: 20%;
-  margin-left: 5rem;
+  margin-top: 22%;
+  margin-left: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .card {
   width: 350px;
-  height: 500px;
+  height: 670px;
   border: 1px solid #f8f7f7;
   border-radius: 8px;
   position: relative;
 }
-.card svg {
+.svg {
   position: absolute;
-  top: 29%;
+  top: 23%;
   right: 50px;
 }
 
@@ -128,14 +131,17 @@ section {
   align-items: center;
 }
 
-.card-contents p {
+.card-contents p,
+.wider-content-p {
   font-size: 0.8rem;
 }
 
-.card-contents h2 {
+.card-contents h2,
+.wider-content {
   margin: 0;
   font-size: 1rem;
   font-weight: 500;
+  color: #8f8f8f;
 }
 .content-text {
   line-height: 0.5;
@@ -175,7 +181,7 @@ section {
 }
 .cards__ {
   width: 100px;
-  height: 100px;
+  height: 150px;
   object-fit: cover;
   margin-left: 1rem;
 }
@@ -193,6 +199,147 @@ section {
 }
 
 .card-section {
-  border-top: 1px;
-  border: solid grey;
+  width: 300px;
+  margin: 1rem;
+  background-color: #fafafa;
+}
+.card-section__hr,
+.card-section-hr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text__card {
+  color: #66696a;
+  font-weight: 400;
+  margin: 0.2rem;
+  font-size: 0.9rem;
+}
+.numbers,
+.numbers-3,
+.numbers-10 {
+  padding: 2px 10px;
+  font-weight: 300;
+  border-radius: 50%;
+  background-color: #8f8f8f;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-right: 0.8rem;
+}
+
+.numbers-3,
+.numbers-10 {
+  padding: 2px 15px;
+}
+
+.card-button-image {
+  transform: rotate(90deg);
+  filter: invert(100%);
+}
+.wider-card {
+  width: 600px;
+  height: 300px;
+  border: 1px solid #e0d9d9;
+  border-radius: 2px;
+  margin-right: 10rem;
+}
+
+.cart {
+  margin-top: 1rem;
+}
+.wider__card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wider-content-p,
+.wider-content-date {
+  color: #8f8f8f;
+}
+
+.wider-content-date {
+  margin-right: 0.8rem;
+  font-size: 0.8rem;
+}
+.wider-card-h2 {
+  margin-left: 1rem;
+}
+.wider-card-h2 > h2 {
+  margin: 0;
+}
+.wider-content-block {
+  display: block;
+}
+.wider-content-span {
+  padding-left: 1rem;
+}
+
+.paraghaph-contents {
+  font-size: 1rem;
+  width: 400px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    height: 50vh;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  form {
+    padding-left: 10%;
+  }
+
+  input {
+    width: 350px;
+  }
+
+  svg {
+    position: absolute;
+    right: 15%;
+  }
+
+  .section .icon-left {
+    display: none;
+  }
+
+  .section .icon-right {
+    display: none;
+  }
+
+  .image-text {
+    padding: 3px;
+  }
+
+  .image-fluid {
+    width: 150px;
+    height: 200px;
+  }
+
+  .image2 {
+    display: none;
+  }
+
+  .fa-solid {
+    font-size: 8px;
+  }
+
+  .image-span {
+    font-size: 10px;
+  }
+
+  .image-content {
+    font-size: 13px;
+  }
+
+  section {
+    margin-top: 60%;
+    margin-left: 5rem;
+  }
+
+  .h3 {
+    font-size: 1rem;
+  }
 }
