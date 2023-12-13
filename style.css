@@ -1,14 +1,83 @@
+:root {
+  --branding-color: #745e96;
+  --arrow-color: #ff722d;
+  --icon-color: #e87769;
+  --text-color: #66696a;
+  --primary-color: #fafafa;
+  --link-color: #44a8d4;
+  --secondary-color: #8f8f8f;
+  --h2-color: #2e3133;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  height: 800vh;
+  height: 200vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-top: 0.8rem;
+  cursor: pointer;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-contents {
+  padding-left: 2rem;
+  font-size: 0.8rem;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.nav-contents:hover,
+.nav-text:hover,
+.nav-text-span:hover {
+  color: var(--arrow-color);
+}
+.nav-text {
+  font-size: 2rem;
+  font-weight: 200;
+  color: var(--branding-color);
+}
+
+.nav-text-span {
+  font-weight: 400;
+}
+
+.nav-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.nav-image-display {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-number {
+  font-weight: 400;
+  border-radius: 50px;
+  padding: 4px 8px;
+  background-color: var(--arrow-color);
+  color: #f9f7f8;
+  font-size: 0.5rem;
+  position: absolute;
+  right: -10px;
+  top: -8px;
 }
 
 .hero {
   height: 60vh;
   border: none;
-  background-color: #745e96;
+  background-color: var(--branding-color);
   margin: auto;
 }
 h1 {
@@ -31,7 +100,6 @@ h1 {
   border: none;
   position: relative;
   padding-left: 1.5rem;
-
   color: gray;
 }
 
@@ -52,7 +120,7 @@ svg {
   position: absolute;
   border: none;
   border-radius: 50%;
-  background-color: #ff722d;
+  background-color: var(--arrow-color);
 }
 
 .section .icon-left {
@@ -91,7 +159,7 @@ svg {
 
 .fa-solid {
   font-size: 10px;
-  color: #e87769;
+  color: var(--icon-color);
 }
 
 .image-span {
@@ -104,6 +172,7 @@ svg {
 .image-content {
   font-size: 15px;
   font-weight: 600;
+  color: var(--text-color);
 }
 
 section {
@@ -144,7 +213,7 @@ section {
   margin: 0;
   font-size: 1rem;
   font-weight: 500;
-  color: #8f8f8f;
+  color: var(--text-color);
 }
 .content-text {
   line-height: 0.5;
@@ -159,7 +228,7 @@ section {
 
 .card__content-boder {
   width: 350px;
-  background-color: #745e96;
+  background-color: var(--branding-color);
   color: #fff;
   padding-top: 2px;
   padding-bottom: 1rem;
@@ -175,7 +244,7 @@ section {
 }
 .h3 {
   margin-top: 30px;
-  color: #66696a;
+  color: var(--text-color);
 }
 
 .card__content-boder p {
@@ -197,14 +266,14 @@ section {
 .card__content p {
   margin-left: 8px;
   font-size: 14px;
-  color: #66696a;
+  color: var(--text-color);
   text-transform: capitalize;
 }
 
 .card-section {
   width: 300px;
   margin: 1rem;
-  background-color: #fafafa;
+  background-color: var(--primary-color);
 }
 .card-section__hr,
 .card-section-hr {
@@ -214,7 +283,7 @@ section {
 }
 
 .text__card {
-  color: #66696a;
+  color: var(--text-color);
   font-weight: 400;
   margin: 0.2rem;
   font-size: 0.9rem;
@@ -225,7 +294,7 @@ section {
   padding: 2px 10px;
   font-weight: 300;
   border-radius: 50%;
-  background-color: #8f8f8f;
+  background-color: var(--secondary-color);
   color: #fff;
   cursor: pointer;
   font-size: 0.8rem;
@@ -260,7 +329,7 @@ section {
 }
 .wider-content-p,
 .wider-content-date {
-  color: #8f8f8f;
+  color: var(--text-color);
 }
 
 .wider-content-date {
@@ -286,7 +355,7 @@ section {
 }
 
 .wider-card-link {
-  color: #44a8d4;
+  color: var(--link-color);
   text-decoration: underline;
 }
 
@@ -309,7 +378,7 @@ section {
 .card-content {
   margin-top: 70px;
   height: 115px;
-  background-color: #f9f7f8;
+  background-color: var(--primary-color);
 }
 .wider-card-form {
   display: flex;
@@ -338,7 +407,7 @@ section {
 .wide-background > h4 {
   display: inline;
   color: #f8f7f7;
-  background-color: #38a4d2;
+  background-color: var(--link-color);
   font-size: 0.6rem;
   letter-spacing: 2px;
   padding-left: 10rem;
@@ -359,12 +428,9 @@ section {
   width: 350px;
   margin-left: 25%;
   margin-top: 2rem;
-}
-
-.card-paragraph {
   font-size: 0.8rem;
   font-weight: 400;
-  color: #6a7575;
+  color: var(--text-color);
 }
 
 .card-paragraph-span {
@@ -380,18 +446,18 @@ section {
 
 .card-button {
   margin-top: 2.5rem;
-  outline: 1px solid #38a4d2;
+  outline: 1px solid var(--link-color);
   left: 25%;
 }
 
 main {
-  background: #fafafa;
+  background: var(--primary-color);
   margin-top: 8%;
   margin-left: 5%;
   margin-right: 5%;
 }
 .main-card {
-  border-top: 5px solid #ff722e;
+  border-top: 5px solid var(--arrow-color);
   background: #fff;
   width: 900px;
   height: 350px;
@@ -402,7 +468,7 @@ main {
 .main-content {
   width: 400px;
   margin-left: 2rem;
-  color: #6a7575;
+  color: var(--text-color);
   font-weight: 400;
   line-height: 1.5;
 }
@@ -414,12 +480,12 @@ main {
 
 .main-content h2 {
   font-size: 2.5rem;
-  color: #2e3133;
+  color: var(--h2-color);
   font-weight: 700;
 }
 
 .main-button {
-  outline: 1px solid #ff722d;
+  outline: 1px solid var(--arrow-color);
 }
 .main-image {
   width: 400px;
@@ -433,8 +499,8 @@ main {
 }
 
 .main-header {
-  margin-top: 5%;
-  color: #66696a;
+  margin-top: 8%;
+  color: var(--text-color);
   margin-left: 12%;
   margin-right: 12%;
   display: flex;
@@ -444,7 +510,7 @@ main {
 .main-new-release {
   font-size: 0.8rem;
   font-weight: 300;
-  color: #ff722d;
+  color: var(--arrow-color);
   letter-spacing: 1;
 }
 
@@ -466,11 +532,14 @@ small {
 .explore {
   display: flex;
   justify-content: space-between;
-  margin-left: 1rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
   font-weight: 500;
-  color: #66696a;
+  text-transform: uppercase;
   margin-top: 8%;
   cursor: pointer;
+  font-size: 0.8rem;
+  color: var(--link-color);
 }
 
 .explore-contents {
@@ -482,8 +551,33 @@ small {
 .explore-contents,
 .explore__content {
   padding: 5px;
-  color: #66696a;
+  color: var(--text-color);
+  font-size: 0.5rem;
+  text-transform: capitalize;
+}
+
+footer {
+  background: var(--branding-color);
+  height: 25vh;
+  margin-top: 1rem;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.fa-brands {
+  margin-right: 1.5rem;
+  padding: 0.8rem;
   font-size: 0.8rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #f9f7f8;
+  cursor: pointer;
+}
+.fa-brands:hover {
+  border-color: var(--arrow-color);
 }
 
 @media (max-width: 900px) {
@@ -493,12 +587,10 @@ small {
   h1 {
     font-size: 2.5rem;
   }
-  form {
-    padding-left: 10%;
-  }
 
-  input {
-    width: 350px;
+  .hero-form {
+    padding-left: 13%;
+    padding-top: 2rem;
   }
 
   svg {
@@ -515,12 +607,12 @@ small {
   }
 
   .image-text {
-    padding: 3px;
+    padding: 5px;
   }
 
   .image-fluid {
-    width: 150px;
-    height: 200px;
+    width: 200px;
+    height: 250px;
   }
 
   .image2 {
@@ -540,11 +632,112 @@ small {
   }
 
   section {
-    margin-top: 60%;
-    margin-left: 5rem;
+    margin-top: 40%;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    grid-template-columns: 1fr;
   }
 
   .h3 {
     font-size: 1rem;
+  }
+
+  .wider-card {
+    max-width: 500px;
+    height: 460px;
+    margin-right: 0;
+  }
+
+  .paraghaph-contents {
+    width: 300px;
+    line-height: 1.5;
+  }
+
+  .wider-card-button {
+    padding: 8px 15px;
+    left: 32%;
+    font-size: 0.8rem;
+  }
+
+  .input-card {
+    width: 300px;
+    height: 40px;
+  }
+
+  .wide__cards {
+    margin-top: 3.5rem;
+    height: 240px;
+  }
+
+  .card-paragraph {
+    width: 300px;
+    margin-left: 30%;
+    margin-top: 1.5rem;
+  }
+
+  .card-paragraph h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  .card-button {
+    margin-left: 5%;
+  }
+
+  .main-card {
+    width: 500px;
+    height: 650px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .main-content {
+    width: 400px;
+  }
+  .main__paragraph {
+    font-size: 0.6rem;
+  }
+
+  .main-content h2 {
+    font-size: 1.5rem;
+  }
+  .main-button {
+    margin-left: 5rem;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+  .main-image {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+  }
+  .main-header {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .main__content-text {
+    font-size: 0.8rem;
+  }
+
+  .main__text {
+    margin-top: 1rem;
+
+    line-height: 1.5;
+  }
+  .explore {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .explore-contents {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    height: 20vh;
+  }
+
+  .fa-brands {
+    padding: 0.5rem;
   }
 }
