@@ -528,6 +528,47 @@ small {
   margin-top: 1.5rem;
   font-size: 0.8rem;
 }
+.middle-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12%;
+  color: var(--text-color);
+  background-color: #f2f0f1;
+  text-align: center;
+}
+
+.middle-section-contents > h5 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.middle-section-contents > h5 p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  width: 500px;
+}
+.middle-section-contents {
+  margin-left: 15%;
+}
+
+.middle-image {
+  width: 500px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.middle-button-container {
+  margin-right: 1rem;
+}
+
+.middle-button {
+  border: none;
+  outline: 1px solid var(--link-color);
+  padding: 8px;
+  border-radius: 50px;
+  margin-top: 20px;
+  color: var(--text-color);
+}
 
 .explore {
   display: flex;
@@ -685,34 +726,32 @@ footer {
   }
 
   .main-card {
-    width: 500px;
-    height: 650px;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .main-content {
-    width: 400px;
-  }
-  .main__paragraph {
-    font-size: 0.6rem;
+    width: 600px;
   }
 
   .main-content h2 {
     font-size: 1.5rem;
   }
+
+  .main-words {
+    font-size: 0.8rem;
+  }
+  .main__paragraph {
+    font-size: 0.6rem;
+  }
+
   .main-button {
-    margin-left: 5rem;
+    margin-left: 2rem;
     font-size: 0.8rem;
     margin-top: 1rem;
   }
   .main-image {
-    width: 300px;
-    height: 300px;
-    margin: auto;
+    width: 200px;
   }
+
   .main-header {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .main__content-text {
@@ -721,9 +760,31 @@ footer {
 
   .main__text {
     margin-top: 1rem;
-
     line-height: 1.5;
   }
+  .main-text {
+    width: 600px;
+  }
+
+  .middle-section-contents > h5 {
+    font-size: 1rem;
+  }
+
+  .middle-section-contents > h5 p {
+    width: 350px;
+  }
+  .middle-section-contents {
+    margin-left: 10%;
+  }
+
+  .middle-image {
+    width: 400px;
+    height: 200px;
+  }
+  .middle-button-container {
+    margin-bottom: 30px;
+  }
+
   .explore {
     margin-left: 5rem;
     margin-right: 5rem;
